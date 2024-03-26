@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Info - Maruthi B M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @media screen and (max-width: 750px) {
+        nav a {
+          font-size: 15px;
+        }
+        .about-content img {
+          width: 250px;
+        }
+      }
+      /* home-wrapper starts */
+      .home-wrapper {
+        height: 100vh;
+        width: 100%;
+        background-image: url(./test-gadgets.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      }
+
+      .home-content {
+        height: 300px;
+        width: 600px;
+        /* background-color: #ffffff;
+            opacity: 0.3;
+            backdrop-filter: blur(5px); */
+        color: rgb(10, 11, 11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .home-content a {
+        text-decoration: none;
+      }
+
+      .home-wrapper .home-content {
+        /* font-family: 'Poppins', sans-serif; */
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        /* line-height: 30px; */
+      }
+
+      .home-content h1 {
+        font-size: 50px;
+        animation: slide 2s ease;
+      }
+
+      @keyframes slide {
+        from {
+          transform: translate(-800px);
+          opacity: 0;
+        }
+
+        to {
+          transform: translate(0);
+          opacity: 1;
+        }
+      }
+
+      .home-content h2 {
+        font-size: 25px;
+        animation: slide2 2s ease;
+      }
+
+      @keyframes slide2 {
+        from {
+          transform: translate(800px);
+          opacity: 0;
+        }
+
+        to {
+          transform: translate(0);
+          opacity: 1;
+        }
+      }
+
+      .home-content span {
+        color: red;
+      }
+
+      .home-content button {
+        height: 50px;
+        width: 230px;
+        color: red;
+        background-color: transparent;
+        border: red solid;
+        font-size: 20px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .home-content button:hover {
+        animation: wave 0.5s ease-out 1;
+        /* transition: all 1s ease-out; */
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          scale: 1;
+          /* opacity: 0; */
+        }
+
+        50% {
+          scale: 1.3;
+          /* opacity: .5; */
+        }
+      }
+      /* home-wrapper ends */
+      /* main content starts */
+      .main-wrapper {
+        width: 100%;
+        height: 3000px;
+        background-image: url(./shine.gif);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      nav a {
+        font-size: 30px;
+        color: white;
+        font-family: "Exo 2", sans-serif;
+        text-decoration: none;
+      }
+
+      nav {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-right: 20px;
+        font-weight: 500;
+        animation: slide 2s ease;
+      }
+
+      nav a:hover {
+        color: red;
+      }
+
+      nav :nth-child(2) {
+        color: red;
+      }
+
+      .primary-para {
+        font-size: 25px;
+        color: white;
+      }
+
+      /* about-content starts */
+
+      .about-content {
+        width: 600px;
+        /* height: fit-content; */
+        text-align: center;
+        position: relative;
+        left: 100px;
+        top: 50px;
+      }
+      .about-content img {
+        width: 300px;
+        /* height: 300px; */
+        /* box-shadow: 3px 3px 1px whitesmoke; */
+        filter: drop-shadow(3px 3px 0px whitesmoke);
+        border-radius: 50%;
+      }
+
+      /* skills starts */
+      .skills {
+        width: 750px;
+        height: 600px;
+        /* border: solid red; */
+        margin-top: -630px;
+        margin-left: 600px;
+      }
+
+      .skills h1 {
+        font-size: 50px;
+        font-weight: 100;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        text-shadow: 2px 2px 1px rgb(225, 97, 97);
+      }
+
+      .skills .skills1,
+      .skills2,
+      .skills3,
+      .skills4,
+      .skills5 {
+        width: 100%;
+        height: 80px;
+        /* border: solid green; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      .python,
+      .webtech,
+      .c-lang {
+        width: 100px;
+        height: 100%;
+        /* border: solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .java,
+      .datastructure,
+      .sql,
+      .django {
+        width: 100px;
+        height: 100%;
+        /* border: solid yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .skills a {
+        text-decoration: none;
+      }
+
+      .skills img {
+        width: 100px;
+        height: 80px;
+        border-radius: 10px;
+      }
+
+      .python:hover,
+      .webtech:hover,
+      .c-lang:hover,
+      .java:hover,
+      .datastructure:hover,
+      .sql:hover,
+      .django:hover {
+        animation: skills 1s ease-out 1;
+        /* transition: all 1s ease-out; */
+      }
+
+      @keyframes skills {
+        0%,
+        100% {
+          scale: 1;
+          /* opacity: 0; */
+        }
+
+        50% {
+          scale: 2;
+          /* opacity: .5; */
+        }
+      }
+
+      .skills button {
+        height: 50px;
+        width: 230px;
+        color: rgb(196, 72, 38);
+        background-color: transparent;
+        border: rgb(196, 72, 38) solid;
+        font-size: 20px;
+        border-radius: 3px;
+        margin-top: 50px;
+        margin-left: 30px;
+      }
+
+      .skills button:hover {
+        animation: wave 0.5s ease-out 1;
+        /* transition: all 1s ease-out; */
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          scale: 1;
+          /* opacity: 0; */
+        }
+
+        50% {
+          scale: 1.3;
+          /* opacity: .5; */
+        }
+      }
+      /* skills ends */
+      /* about content ends */
+      /*  project-content starts */
+      .project-content {
+        width: 100%;
+        height: 1500px;
+        margin-top: 10%;
+        background-image: url(./moo.gif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+        /* text-align: center; */
+      }
+      .project1,
+      .project3 {
+        width: 100%;
+        text-align: center;
+        /* position: relative; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 15%;
+        margin-top: 10%;
+        /* left: 100px;
+      top: 50px; */
+      }
+      .project-content h1 {
+        color: rgb(255, 234, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 70px;
+        margin-left: 620px;
+        text-shadow: 5px 5px 5px red;
+      }
+      .project1 .box1 {
+        width: 600px;
+        height: 400px;
+        background-color: brown;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+      }
+      .project1 .box1 .box2 {
+        width: 90%;
+        height: 80%;
+        background-color: green;
+      }
+      .title {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .title .button {
+        width: 500px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: rgb(42, 50, 165);
+      }
+      .project2 {
+        width: 100%;
+        text-align: center;
+        /* position: relative; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        gap: 20%;
+        margin-top: 10%;
+      }
+      .project2 .box1 {
+        width: 600px;
+        height: 400px;
+        background-color: green;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+      }
+      .project2 .box1 .box2,
+      .project4 .box1 .box2 {
+        width: 90%;
+        height: 80%;
+        background-color: brown;
+      }
+      /* project-content ends */
+      /* contact-content starts */
+      .contact-content {
+        width: 100%;
+        height: 1000px;
+        margin-top: -10%;
+        background-image: url(./black.gif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .contact-content .contact {
+        width: fit-content;
+        height: fit-content;
+        /* border: solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      /* contact-content ends */
+      /* mian-wrapper ends */
+    </style>
+  </head>
+  <body>
+    <!-- Home-wrapper starts -->
+    <div class="home-wrapper" id="home">
+      <div class="home-content">
+        <h1>Hello, I'm <span>Maruthi B M</span></h1>
+        <h2>I'm a Full Stack Web Developer</h2>
+        <a href="#about"
+          ><button>
+            Explore More<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-down-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+              />
+            </svg></button
+        ></a>
+      </div>
+    </div>
+    <!-- Home-wrapper ends -->
+    <!-- main wrapper starts -->
+    <div class="main-wrapper" id="about">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+        <a href="./Maruthi's Resume (1).pdf" download>Resume</a>
+      </nav>
+      <!-- about-content strats -->
+      <div class="about-content">
+        <img src="./my.jpg" alt="" />
+        <p class="primary-para">
+          A recent graduate with a solid background in Web development, I'm
+          looking for a position as an Associate Software Engineer where I can
+          support and offer my technical talents to flex operations. eager to
+          use project experiences, academic achievements, and a dedication to
+          international best practices to produce meaningful solutions.
+        </p>
+        <!-- skills starts -->
+        <div class="skills">
+          <h1>Skills</h1>
+          <div class="skills1">
+            <div class="python">
+              <a href=""><img src="./python.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="skills2">
+            <div class="java">
+              <a href=""><img src="./java.jpg" alt="" /></a>
+            </div>
+            <div class="datastructure">
+              <a href=""><img src="./datastruct.jpeg" alt="" /></a>
+            </div>
+          </div>
+          <div class="skills3">
+            <div class="webtech">
+              <a href=""><img src="./wentech.jpeg" alt="" /></a>
+            </div>
+          </div>
+          <div class="skills4">
+            <div class="sql">
+              <a href=""><img src="./sql.jpeg" alt="" /></a>
+            </div>
+            <div class="reactJs">
+              <a href=""><img src="./react.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="skills5">
+            <div class="c-lang">
+              <a href=""><img src="./c-lang.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <!-- skills ends -->
+      </div>
+      <!-- about-content ends -->
+      <!-- Project-content starts -->
+      <div class="project-content" id="project">
+        <h1>Project</h1>
+        <!-- project1 starts -->
+        <div class="project1">
+          <div class="box1">
+            <div class="box2">
+              <img
+                src="./Screenshot (47).png"
+                alt=""
+                width="110%"
+                height="105%"
+              />
+            </div>
+          </div>
+          <div class="title">
+            <h2 style="color: white; text-align: justify">
+              <span style="color: rgb(119, 255, 0)">Title:</span> Calculator
+            </h2>
+            <p style="color: white; text-align: justify">
+              <span style="color: rgb(119, 255, 0); font-size: 20px"
+                >Discription:</span
+              >
+              Creating a calculator using HTML and CSS is a great beginner project for web development enthusiasts. 
+              You can design a simple calculator interface with buttons for numbers, arithmetic operations, and a display screen to show the input and result. 
+              Use CSS to style the layout, buttons, and text to make it visually appealing and user-friendly. 
+              This project helps you practice HTML for structure and CSS for styling, while also incorporating some basic JavaScript for the calculator's functionality.
+             It's a fun way to improve your front-end development skills and create something practical.
+            </p>
+            <div class="button">
+              <a href=" https://maruthibm77.github.io/Calculator.github.io/"
+                ><button>View App</button></a
+              >
+              <a
+                href="https://github.com/maruthibm77/Calculator.github.io.git"
+                ><button>Source code</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- project1 ends -->
+        <!-- project2 starts -->
+        <div class="project2">
+          <div class="title">
+            <h2 style="color: white; text-align: justify">
+              <span style="color: rgb(255, 0, 0)">Title:</span>
+              Cows Lumpy Virus Detection
+            </h2>
+            <p style="color: white; text-align: justify">
+              <span style="color: rgb(255, 0, 0); font-size: 20px"
+                >Discription:</span
+              >
+              Detecting the Cow's Lumpy Skin Disease virus with Deep Learning entails
+              creating and training neural networks on image data to recognize virus related
+              visual patterns. Analyzing distinct features in infected cattle skin,
+              these models enable early and precise disease diagnosis, potentially
+              curbing its spread and reducing economic losses in the livestock sector.
+            </p>
+            <div class="button">
+              <a href="https://github.com/maruthibm77/lumpy.git"
+                ><button>View App</button></a
+              >
+              <a href=""><button>Source code</button></a>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box2">
+              <img
+                src="./Screenshot (33).png"
+                alt=""
+                width="90%"
+                height="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- project2 ends -->
+      </div>
+      <!-- project-content ends -->
+      <!-- contact-content starts -->
+      <div class="contact-content" id="contact">
+        <h1 style="color: white; text-align: center; font-size: 80px">
+          Contact
+        </h1>
+        <div class="contact">
+          <form action="">
+            <table
+              style="
+                background-color: rgb(168, 176, 176);
+                border-collapse: collapse;
+                width: 500px;
+                height: 500px;
+                font-size: 25px;
+              "
+            >
+              <tr>
+                <td><label for="name">Enter Your name:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    style="width: 250px; height: 30px"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="email">Enter Your Email Id:</label></td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    style="width: 250px; height: 30px"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea
+                    name="comments"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    style="width: 505px; height: 362px; font-size: 20px"
+                  >
+Your Comments</textarea
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    style="
+                      width: 250px;
+                      height: 50px;
+                      font-size: 25px;
+                      background-color: green;
+                    "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="reset"
+                    value="Clear"
+                    style="
+                      width: 250px;
+                      height: 50px;
+                      font-size: 25px;
+                      background-color: red;
+                    "
+                  />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <!-- contact-content ends-->
+    </div>
+    <!-- main wrapper ends -->
+  </body>
+</html>
